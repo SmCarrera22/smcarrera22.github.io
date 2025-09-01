@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Guau&Miau</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container logo-container">
+            <img src="Multimedia/Logo_Empresa.jpg" id="logoEmpresa" alt="Logo Guau&Miau">
+        </div>
+    </header>
+
+    <h1 class="title">Iniciar Sesión</h1>
+
+    <div class="form-container">
+        <form id="loginForm" class="login-form">
+            <label for="loginEmail">Correo Electrónico:</label>
+            <input type="email" id="loginEmail" required>
+            <span class="error" id="loginEmailError"></span>
+
+            <label for="loginPassword">Contraseña:</label>
+            <input type="password" id="loginPassword" required>
+            <span class="error" id="loginPasswordError"></span>
+
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
+
+    <p class="linkPage">¿No tienes cuenta? <a href="register.html">Regístrate aquí</a></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
