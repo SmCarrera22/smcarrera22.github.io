@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Guau&Miau</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container logo-container">
+            <img src="Multimedia/Logo_Empresa.jpg" id="logoEmpresa" alt="Logo Guau&Miau">
+        </div>
+    </header>
+
+    <h1 class="title">Regístrate Aquí</h1>
+
+    <div class="form-container">
+        <form id="registerForm">
+            <label for="fullName">Nombre Completo:</label>
+            <input type="text" id="fullName" name="fullName" required maxlength="50">
+            <span class="error" id="fullNameError"></span>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
+
+            <label for="confirmEmail">Confirmar Correo Electrónico:</label>
+            <input type="email" id="confirmEmail" name="confirmEmail" required>
+            <span class="error" id="confirmEmailError"></span>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <span class="error" id="passwordError"></span>
+
+            <label for="confirmPassword">Confirmar Contraseña:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <span class="error" id="confirmPasswordError"></span>
+
+            <label for="phone">Celular (Opcional):</label>
+            <input type="text" id="phone" name="phone">
+            <span class="error" id="phoneError"></span>
+
+            <div id="contenedorMascotas">
+                <h3>Mascotas</h3>
+                <div class="pet">
+                    <label>Tipo Mascota:
+                        <select name="petType[]" required>
+                            <option value="">Seleccione:</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                            <option value="ave">Ave</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </label>
+                    <label>Nombre Mascota:
+                        <input type="text" name="petName[]" maxlength="50" required>
+                    </label>
+                </div>
+            </div>
+            <button type="button" id="addPet">+ Añadir otra mascota</button>
+            <br>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+
+    <p class="linkPage">¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
