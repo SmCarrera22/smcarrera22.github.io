@@ -2,15 +2,32 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background: #f9f9f9;
     margin: 0;
+    background-image: url(Multimedia/backgroundImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body:not(.bodyHome) {
+    margin-top: 160px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 0;
 }
 
 header {
     background-color: #1295e6c3;
-    padding: 2rem 0;
-    min-height: 180px;
+    padding: 1rem 0;
+    min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo-container {
@@ -20,7 +37,7 @@ header {
 }
 
 #logoEmpresa {
-    width: 450px;
+    width: 350px;
     max-width: 100%;
     height: auto;
 }
@@ -40,8 +57,7 @@ form label {
     font-weight: bold;
 }
 
-form input,
-form select {
+form input,form select {
     width: 100%;
     padding: 10px;
     margin-top: 4px;
@@ -76,6 +92,113 @@ button:hover {
 }
 
 .linkPage {
+    display: inline-block;
+    background-color: antiquewhite;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    margin: 1rem auto;
     text-align: center;
-    margin-bottom: 2rem;
+}
+
+.linkPage {
+    display: block;
+    width: fit-content;
+    margin: 1rem auto;
+}
+
+.mainBackground {
+    background-color: #1295e6c3;
+}
+
+.homePicture {
+    width: 350px;
+}
+
+.bodyHome {
+    margin: 0;
+    padding-top: 120px;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img .accessImg {
+    height: 20px;
+}
+
+section {
+    display: flex;
+    gap: 2rem;
+}
+
+article {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, background 0.3s;
+}
+
+.accessImg {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+article:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+}
+
+article a {
+    display: block;
+    text-decoration: none;
+    color: #1295e6;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+p {
+    background-color: antiquewhite;
+    border-radius: 2px;
+}
+
+#petList {
+    list-style: none;
+    padding: 0;
+}
+
+#petList li {
+    background: #f1f1f1;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-top: 6px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+}
+
+.popup-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
 }
