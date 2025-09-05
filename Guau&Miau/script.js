@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 setTimeout(() => {
                     popup.style.display = "none";
-                    window.location.href = "home.html";
+                    window.location.href = "../index.html";
                 }, 3000);
             }
         });
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 alert("Sus mascotas son: " + petsText);
 
                 setTimeout(() => {
-                    window.location.href = "home.html";
+                    window.location.href = "../index.html";
                 }, 1000);
 
             } else {
